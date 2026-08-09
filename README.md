@@ -1,6 +1,34 @@
-# PrivateAgent
+# NYX — Neural eXecutive
 
-PrivateAgent is an open-source Android automation agent built with Flutter. It utilizes the DeepSeek API and native Android Accessibility Services to interpret screen layouts and execute multi-step tasks across any installed application via natural language commands.
+> Your personal AI agent for Android.
+
+NYX is an Android automation agent built with Flutter. It uses AI and Android Accessibility Services to understand your screen and perform multi-step tasks across your apps using natural-language commands.
+
+## ✨ Features
+
+- 🤖 AI-powered Android automation
+- 👁 Screen understanding through Accessibility Services
+- ⚡ Multi-step task execution
+- 💬 Natural-language commands
+- 🔊 Voice interaction
+- 🔐 Local-first and privacy-focused design
+
+## 🛠️ Built With
+
+- Flutter / Dart
+- Android Accessibility Services
+- AI APIs
+
+## 🚧 Status
+
+NYX is currently an experimental project and is actively being customized and improved.
+
+## 📜 Credits & License
+
+NYX is a modified fork of
+[PrivateAgent](https://github.com/orailnoor/private-agent) by **orailnoor**.
+
+The original project's license and applicable attribution requirements remain in effect.
 
 ## Architecture
 
