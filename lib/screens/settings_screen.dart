@@ -726,7 +726,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       if (await FlutterOverlayWindow.isActive() == false) {
                         await FlutterOverlayWindow.showOverlay(
                           enableDrag: true,
-                          overlayTitle: "PrivateAgent",
+                          overlayTitle: "NYX",
                           overlayContent: "Floating Assistant",
                           flag: OverlayFlag.focusPointer,
                           alignment: OverlayAlignment.centerRight,
@@ -825,7 +825,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           // 9. About / Links Card
           _buildSettingsCard(
             icon: Icons.info_outline_rounded,
-            title: 'About PrivateAgent',
+            title: 'About NYX',
             subtitle: 'Resources and repository access',
             isDark: isDark,
             children: [
@@ -1070,7 +1070,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                 const SizedBox(height: 12),
                 if (!isRunning) ...[
                   const Text(
-                    'Tap below to open Accessibility Settings, then find "PrivateAgent Screen Control" and enable it.',
+                    'Tap below to open Accessibility Settings, then find "NYX Screen Control" and enable it.',
                     style: TextStyle(fontSize: 13),
                   ),
                   const SizedBox(height: 12),

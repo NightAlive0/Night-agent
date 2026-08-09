@@ -67,12 +67,12 @@ void main() async {
 
   final onboardingCompleted = prefs.getBool('onboarding_completed') ?? false;
 
-  runApp(PrivateAgentApp(onboardingCompleted: onboardingCompleted));
+  runApp(NYXApp(onboardingCompleted: onboardingCompleted));
 }
 
-class PrivateAgentApp extends StatelessWidget {
+class NYXApp extends StatelessWidget {
   final bool onboardingCompleted;
-  const PrivateAgentApp({super.key, required this.onboardingCompleted});
+  const NYXApp({super.key, required this.onboardingCompleted});
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +80,7 @@ class PrivateAgentApp extends StatelessWidget {
       valueListenable: themeNotifier,
       builder: (context, ThemeMode currentMode, child) {
         return MaterialApp(
-          title: 'PrivateAgent',
+          title: 'NYX',
           debugShowCheckedModeBanner: false,
           themeMode: currentMode,
           theme: ThemeData(
