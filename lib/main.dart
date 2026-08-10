@@ -125,16 +125,16 @@ class NYXApp extends StatelessWidget {
           ),
           darkTheme: ThemeData(
             brightness: Brightness.dark,
-            primaryColor: const Color(0xFF6366F1), // Indigo-500
+            primaryColor: const Color(0xFF00E676), // NYX Green
             scaffoldBackgroundColor: const Color(
-              0xFF0B0F19,
-            ), // Midnight deep slate
+              0xFF050505,
+            ), // NYX Black
             colorScheme: const ColorScheme.dark(
-              primary: Color(0xFF6366F1), // Indigo-500
-              secondary: Color(0xFF38BDF8), // Sky-400
-              surface: Color(0xFF151D30), // Midnight gray-blue card background
+              primary: Color(0xFF00E676), // NYX Green
+              secondary: Color(0xFF00C853), // NYX Green
+              surface: Color(0xFF0D0D0D), // NYX Card
               onSurface: Color(0xFFF8FAFC), // Slate-50 text
-              surfaceContainerHighest: Color(0xFF1E293B), // Slate-800
+              surfaceContainerHighest: Color(0xFF151515), // NYX Surface
               error: Colors.redAccent,
             ),
             useMaterial3: true,
@@ -153,11 +153,11 @@ class NYXApp extends StatelessWidget {
             ),
             cardTheme: CardThemeData(
               elevation: 0,
-              color: const Color(0xFF151D30),
+              color: const Color(0xFF0D0D0D),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
                 side: BorderSide(
-                  color: const Color(0xFF243049).withOpacity(0.4),
+                  color: const Color(0xFF202020).withOpacity(0.4),
                   width: 1.2,
                 ),
               ),
