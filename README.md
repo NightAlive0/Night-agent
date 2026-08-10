@@ -1,5 +1,13 @@
 # NYX — Neural eXecutive
 
+**NYX is an open-source Android AI automation agent built with Flutter.**
+
+A customized fork of [PrivateAgent](https://github.com/orailnoor/private-agent), NYX uses AI and Android Accessibility Services to understand screens and execute tasks using natural-language commands.
+
+**Project:** Android AI agent · Flutter · AI automation · Accessibility Services
+
+# NYX — Neural eXecutive
+
 > Your personal AI agent for Android.
 
 NYX is an Android automation agent built with Flutter. It uses AI and Android Accessibility Services to understand your screen and perform multi-step tasks across your apps using natural-language commands.
