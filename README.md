@@ -1,106 +1,242 @@
-# NYX — Neural eXecutive
+<div align="center">
 
-**NYX is an open-source Android AI automation agent built with Flutter.**
+# ⟡ NYX
 
-A customized fork of [PrivateAgent](https://github.com/orailnoor/private-agent), NYX uses AI and Android Accessibility Services to understand screens and execute tasks using natural-language commands.
+### **NEURAL eXecutive**
 
-**Project:** Android AI agent · Flutter · AI automation · Accessibility Services
+*A local-first AI companion for Android.*
 
-# NYX — Neural eXecutive
+<br>
 
-> Your personal AI agent for Android.
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-00E676?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Android](https://img.shields.io/badge/Android-8.0%2B-00E676?style=for-the-badge&logo=android&logoColor=white)](https://www.android.com/)
+[![License](https://img.shields.io/badge/License-Open%20Source-151515?style=for-the-badge)](#-license)
 
-NYX is an Android automation agent built with Flutter. It uses AI and Android Accessibility Services to understand your screen and perform multi-step tasks across your apps using natural-language commands.
+<br>
 
-## ✨ Features
+> **Think it. Tell NYX. Let it handle the rest.**
 
-- 🤖 AI-powered Android automation
-- 👁 Screen understanding through Accessibility Services
-- ⚡ Multi-step task execution
-- 💬 Natural-language commands
-- 🔊 Voice interaction
-- 🔐 Local-first and privacy-focused design
+</div>
 
-## 🛠️ Built With
+---
 
-- Flutter / Dart
-- Android Accessibility Services
-- AI APIs
+## ◉ What is NYX?
 
-## 🚧 Status
+**NYX** is an Android AI agent built around natural-language interaction and device automation.
 
-NYX is currently an experimental project and is actively being customized and improved.
+Instead of manually navigating through multiple screens, NYX is designed to understand a task, interact with the Android interface, and execute the required actions.
 
-## 📜 Credits & License
+> **Make your phone feel more intelligent without making the interface more complicated.**
 
-NYX is a modified fork of
-[PrivateAgent](https://github.com/orailnoor/private-agent) by **orailnoor**.
+---
 
-The original project's license and applicable attribution requirements remain in effect.
+## ⚡ Core Capabilities
 
-## Architecture
+| Capability | Description |
+|---|---|
+| 🧠 **AI Interaction** | Communicate with an AI assistant using natural language |
+| 📱 **Screen Control** | Interact with Android applications through accessibility services |
+| ⚙️ **Task Automation** | Execute multi-step actions from a single instruction |
+| 🎙️ **Voice** | Voice input and text-to-speech capabilities |
+| 🔒 **Local-first Design** | Designed around keeping control of your configuration and data |
+| 🛰️ **Background Tasks** | Monitor ongoing agent activity while using other applications |
 
-The system operates on a continuous feedback loop:
-1. The user issues a command (via voice, text, or Telegram remote access).
-2. The agent captures the current screen hierarchy, calculating the exact spatial coordinates of all interactive elements.
-3. The layout data is transmitted to the AI provider alongside the current task context and the result of the previous action.
-4. The AI determines the next optimal action (e.g., clicking specific coordinates, inputting text, scrolling).
-5. The native Android layer executes the action.
-6. The loop repeats until the task is marked as complete.
+---
 
-## Capabilities
+## 🖥️ The NYX Interface
 
-- **Screen Reading:** Parses the Android UI tree to map clickable, scrollable, and editable elements.
-- **Coordinate-Based Interaction:** Simulates physical screen taps based on coordinate geometry, mitigating issues with missing text labels or inaccessible icons.
-- **Remote Access:** Integrates with the Telegram Bot API via background polling, allowing users to issue commands and monitor task execution progress remotely.
-- **Voice Control:** Native speech-to-text integration for hands-free operation.
+NYX is being redesigned around a darker, minimal interface.
 
-## Installation
+```text
+        ┌─────────────────────────┐
+        │                         │
+        │          NYX            │
+        │                         │
+        │    NEURAL EXECUTIVE     │
+        │                         │
+        │       ● READY           │
+        │                         │
+        └─────────────────────────┘
 
-Download the latest APK directly from the [Releases Page](https://github.com/orailnoor/private-agent/releases).
+             BLACK × GREEN
+```
 
-Choose `app-universal-release.apk` when it is available. It supports ARM64,
-32-bit ARM, and x86_64 devices in one package. If a release only provides split
-APKs, most modern Android phones—including Snapdragon devices—must use
-`app-arm64-v8a-release.apk`.
+**Black backgrounds · subtle surfaces · neon green accents · minimal clutter**
 
-PrivateAgent supports Android 8.0 (API 26) and newer. Current release builds are
-also checked for Android 15/16's 16 KB native-library alignment requirement.
+---
 
-## Setup Instructions (How to use for FREE)
+## 🚀 Getting Started
 
-This app requires an AI brain to operate. You can use it **100% for free** by using OpenRouter's free models.
+### Requirements
 
-1. Install the APK on your Android device (API 30+ recommended).
-2. Go to [OpenRouter.ai](https://openrouter.ai/) and create a free account.
-3. Generate a free API Key.
-4. Launch PrivateAgent and go to the **Settings** screen.
-5. Tap the **"OpenRouter"** quick-select chip under Base URL.
-6. Paste your API Key.
-7. Type `openai/gpt-oss-120b:free` (or any other free model) into the Model field.
-8. Enable the **"PrivateAgent Screen Control"** service in your Android Accessibility Settings.
+- Android **8.0 / API 26 or newer**
+- An AI provider/API configuration supported by the project
+- Accessibility permission for screen automation
 
-### “Restricted setting” when enabling Screen Control
+### Clone the Repository
 
-Android may block accessibility access for apps installed from an APK. This is
-an operating-system safety restriction:
+```bash
+git clone https://github.com/NightAlive0/Night-agent.git
+cd Night-agent
+```
 
-1. Open **Settings → Apps → PrivateAgent**.
-2. Open the three-dot menu in the top-right corner.
-3. Tap **Allow restricted settings** and confirm.
-4. Return to PrivateAgent and open **Accessibility Settings** again.
-5. Enable **PrivateAgent Screen Control**.
+### Install Dependencies
 
-PrivateAgent now shows these instructions and provides shortcuts to both App
-Info and Accessibility Settings during onboarding.
+```bash
+flutter pub get
+```
 
-## Telegram Integration
+### Build NYX
 
-To enable remote access:
-1. Acquire a bot token from BotFather on Telegram.
-2. Input the token in the PrivateAgent Settings screen and enable the integration toggle.
-3. The application will maintain a background polling connection to the Telegram API to receive commands.
+```bash
+flutter build apk
+```
 
-## License
+The generated APK will be located in:
 
-This project is open-source and available for modification.
+```text
+build/app/outputs/flutter-apk/
+```
+
+---
+
+## 🔐 Permissions
+
+NYX uses Android permissions required for its functionality.
+
+The accessibility service allows NYX to interact with the Android interface.
+
+> ⚠️ Accessibility access gives an application significant control over the device. Only enable it for software you trust and understand.
+
+---
+
+## 🧩 Architecture
+
+```text
+                    ┌──────────────┐
+                    │     NYX      │
+                    │   Flutter    │
+                    └──────┬───────┘
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+              ▼            ▼            ▼
+         AI Service    Task Engine   UI Layer
+              │            │
+              │            ▼
+              │      Android Control
+              │            │
+              └────────────▼
+                    Accessibility
+                       Service
+```
+
+### Project Structure
+
+```text
+lib/
+├── screens/
+├── services/
+├── widgets/
+└── ...
+
+android/
+└── Native Android components
+```
+
+---
+
+## 🛠️ NYX Roadmap
+
+### Identity
+
+- [x] NYX rebrand
+- [x] NYX color system
+- [ ] Custom NYX icon
+- [ ] Custom splash screen
+- [ ] Full UI redesign
+
+### Agent
+
+- [ ] Custom NYX personality
+- [ ] Improved task planning
+- [ ] Better task feedback
+- [ ] Expanded automation capabilities
+
+### Interface
+
+- [x] Black + green theme
+- [ ] HUD-style elements
+- [ ] Better animations
+- [ ] Custom agent status indicator
+- [ ] More compact mobile UI
+
+### Project
+
+- [ ] NYX documentation website
+- [ ] Release builds
+- [ ] Public changelog
+- [ ] More extensive testing
+
+---
+
+## 📸 Screenshots
+
+> Screenshots will be added as the NYX interface evolves.
+
+---
+
+## 🧪 Development
+
+NYX is currently under active development and customization.
+
+Expect things to change.
+
+If you're experimenting with the project, keep backups of your configuration before making major changes.
+
+---
+
+## 🌌 Philosophy
+
+> **An assistant shouldn't make you adapt to it.  
+> It should adapt to you.**
+
+The goal is to make interaction with Android feel less like operating a collection of applications and more like communicating with an intelligent system.
+
+---
+
+## 🤝 Credits
+
+NYX is a customized fork of **PrivateAgent**, originally created by **orailnoor**.
+
+The original project and its contributors deserve credit for the underlying application, architecture, and functionality on which NYX is based.
+
+### Original Project
+
+https://github.com/orailnoor/private-agent
+
+This repository contains modifications made for the NYX project.
+
+---
+
+## 📜 License
+
+Please refer to the original project's license and retain all required copyright and attribution notices.
+
+NYX does not claim authorship of the original PrivateAgent code.
+
+---
+
+<div align="center">
+
+### ⟡ NYX
+
+**NEURAL eXecutive**
+
+`BLACK // GREEN // INTELLIGENCE`
+
+<br>
+
+**Built with Flutter • Powered by AI • Designed for Android**
+
+</div>
